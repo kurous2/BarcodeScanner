@@ -1,0 +1,298 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "AForge/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/AForge.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.dll": {}
+        }
+      },
+      "AForge.Video/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Video.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Video.dll": {}
+        }
+      },
+      "AForge.Video.DirectShow/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge.Video": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Video.DirectShow.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Video.DirectShow.dll": {}
+        }
+      },
+      "ZXing.Net/0.14.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/zxing.dll": {
+            "related": ".pdb;.presentation.pdb;.presentation.XML;.XML"
+          },
+          "lib/net40/zxing.presentation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net40/zxing.dll": {
+            "related": ".pdb;.presentation.pdb;.presentation.XML;.XML"
+          },
+          "lib/net40/zxing.presentation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AForge/2.2.5": {
+      "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
+      "type": "package",
+      "path": "aforge/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.2.2.5.nupkg.sha512",
+        "aforge.nuspec",
+        "lib/AForge.dll",
+        "lib/AForge.xml"
+      ]
+    },
+    "AForge.Video/2.2.5": {
+      "sha512": "XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
+      "type": "package",
+      "path": "aforge.video/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.video.2.2.5.nupkg.sha512",
+        "aforge.video.nuspec",
+        "lib/AForge.Video.dll",
+        "lib/AForge.Video.xml"
+      ]
+    },
+    "AForge.Video.DirectShow/2.2.5": {
+      "sha512": "pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
+      "type": "package",
+      "path": "aforge.video.directshow/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.video.directshow.2.2.5.nupkg.sha512",
+        "aforge.video.directshow.nuspec",
+        "lib/AForge.Video.DirectShow.dll",
+        "lib/AForge.Video.DirectShow.xml"
+      ]
+    },
+    "ZXing.Net/0.14.0": {
+      "sha512": "iuTglUbRwPB8C3pb0bXzTD6P5mZHPMTIwC9fhequ1PbYXXp3kvH/abje7hBU7Vw2SUGzsUAZ6gOv34cy6DoTmA==",
+      "type": "package",
+      "path": "zxing.net/0.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/zxing.monoandroid.dll",
+        "lib/MonoAndroid/zxing.monoandroid.pdb",
+        "lib/MonoAndroid/zxing.monoandroid.xml",
+        "lib/native/ZXing.XML",
+        "lib/native/ZXing.pdb",
+        "lib/native/ZXing.pri",
+        "lib/native/ZXing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.pdb",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net20/zxing.pdb",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.pdb",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net35/zxing.pdb",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.pdb",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net40/zxing.presentation.pdb",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.pdb",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl3-wp/zxing.wp7.0.pdb",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4-wp71/zxing.wp7.1.pdb",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl4/zxing.sl4.pdb",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/sl5/zxing.sl5.pdb",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8-managed/zxing.winrt.pdb",
+        "lib/windows8/ZXing.XML",
+        "lib/windows8/ZXing.pdb",
+        "lib/windows8/ZXing.pri",
+        "lib/windows8/ZXing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "lib/wp8/zxing.wp8.0.pdb",
+        "zxing.net.0.14.0.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "AForge.Video.DirectShow >= *",
+      "ZXing.Net >= 0.14.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Yusuf\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\work\\HCS\\BarcodeScanner\\BarcodeScanner.csproj",
+      "projectName": "BarcodeScanner",
+      "projectPath": "D:\\work\\HCS\\BarcodeScanner\\BarcodeScanner.csproj",
+      "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\HCS\\BarcodeScanner\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "AForge.Video.DirectShow": {
+            "target": "Package",
+            "version": "[*, )"
+          },
+          "ZXing.Net": {
+            "target": "Package",
+            "version": "[0.14.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video.DirectShow",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZXing.Net 0.14.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZXing.Net",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
