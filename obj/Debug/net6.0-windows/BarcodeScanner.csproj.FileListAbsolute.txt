@@ -19,3 +19,4 @@ D:\work\HCS\BarcodeScanner\obj\Debug\net6.0-windows\BarcodeScanner.pdb
 D:\work\HCS\BarcodeScanner\obj\Debug\net6.0-windows\BarcodeScanner.genruntimeconfig.cache
 D:\work\HCS\BarcodeScanner\obj\Debug\net6.0-windows\ref\BarcodeScanner.dll
 D:\work\HCS\BarcodeScanner\bin\Debug\net6.0-windows\zxing.presentation.dll
+D:\work\HCS\BarcodeScanner\obj\Debug\net6.0-windows\BarcodeScanner.sourcelink.json

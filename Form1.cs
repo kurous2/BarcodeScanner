@@ -13,9 +13,11 @@ public partial class Form1 : Form
     {
         InitializeComponent();
     }
+
     VideoCaptureDevice captureDevice;
     FilterInfoCollection filterInfoCollection;
     private CancellationTokenSource cancellationTokenSource;
+
    private void Form1_Load(object sender, EventArgs e){
         filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
         foreach(FilterInfo filterInfo in filterInfoCollection)
@@ -35,9 +37,12 @@ public partial class Form1 : Form
         captureDevice.Start();
         timerCapture.Start();
 
-        while (!cancellationToken.IsCancellationRequested)
+        DateTime startTime = DateTime.Now;
+
+        //prevent infinite loop, locking thread on video capture qrcode
+        while (!cancellationToken.IsCancellationRequested && (DateTime.Now - startTime).TotalSeconds <= 60)
         {
-       
+    
         }
 
         captureDevice.SignalToStop();
